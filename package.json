@@ -1,0 +1,28 @@
+{
+	"name": "@troyv/...",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "./dist/index.js",
+	"exports": {
+		".": "./dist/index.js"
+	},
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "npx tsc",
+		"format": "npx prettier --write .",
+		"lint": "eslint",
+		"start": "npx tsc-watch --onSuccess \"npx http-server .\""
+	},
+	"dependencies": {
+		"lit": "latest"
+	},
+	"devDependencies": {
+		"@troyv/common-config": "latest",
+		"eslint": "latest",
+		"http-server": "latest",
+		"prettier": "latest",
+		"tsc-watch": "latest",
+		"typescript": "latest"
+	},
+	"prettier": "@troyv/common-config/.prettierrc.json"
+}
